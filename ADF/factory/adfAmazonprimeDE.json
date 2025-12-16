@@ -1,0 +1,9 @@
+{
+	"name": "adfAmazonprimeDE",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "30c268ed-d261-40f7-9cc6-39ab8d40b76c",
+		"tenantId": "957e6496-87a1-4dfa-85a4-7708b718e619"
+	}
+}
