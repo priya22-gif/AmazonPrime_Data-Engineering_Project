@@ -7,7 +7,8 @@ The solution implements a modern medallion architecture (Bronze–Silver–Gold)
 
 🏗️ **Architecture Overview:**
 
-Key design principles:
+**Key design principles:**
+
 Medallion Architecture (Bronze / Silver / Gold)
 Incremental ingestion using Databricks Auto Loader
 Parameterized pipelines for reusability
