@@ -7,7 +7,7 @@ The solution implements a modern medallion architecture (Bronze–Silver–Gold)
 
 🏗️ **Architecture Overview:**
 
-<img width="1503" height="767" alt="AmazonPrime" src="https://github.com/user-attachments/assets/7958d239-9b8d-4a3d-9885-bdbe9eaf770e" />
+ <img width="1503" height="767" alt="AmazonPrime" src="https://github.com/user-attachments/assets/7958d239-9b8d-4a3d-9885-bdbe9eaf770e" />
 
 
 **Key design principles:**
