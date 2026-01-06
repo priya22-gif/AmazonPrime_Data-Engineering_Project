@@ -7,6 +7,9 @@ The solution implements a modern medallion architecture (Bronze–Silver–Gold)
 
 🏗️ **Architecture Overview:**
 
+<img width="1503" height="767" alt="AmazonPrime" src="https://github.com/user-attachments/assets/7958d239-9b8d-4a3d-9885-bdbe9eaf770e" />
+
+
 **Key design principles:**
 
 Medallion Architecture (Bronze / Silver / Gold)
@@ -77,9 +80,7 @@ Analytics-optimized data warehouse
 4️⃣ Gold Layer (Analytics & Warehousing)
 - Built Gold layer using Azure Synapse Analytics
 - Designed analytics-ready tables optimized for reporting
-- Implemented curated datasets for:
-     - Titles added per year
-       
+- Implemented curated datasets
        <img width="1916" height="873" alt="Azure_synapse" src="https://github.com/user-attachments/assets/8ec0b672-09ba-4e19-b341-396c1b41c1ac" />
 
 5️⃣ Data Visualization (Power BI)
