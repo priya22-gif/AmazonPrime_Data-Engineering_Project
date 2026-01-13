@@ -1,4 +1,4 @@
-****🎬 Amazon Prime End-to-End Azure Data Engineering Project****
+****🎬 Azure End-to-End Data Engineering Project – Amazon Prime****
 
 📌 **Project Overview**
 
