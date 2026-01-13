@@ -1,6 +1,6 @@
-#🎬 Azure End-to-End Data Engineering Project – Amazon Prime
+# 🎬 Azure End-to-End Data Engineering Project – Amazon Prime
 
-📌 **Project Overview**
+## 📌 Project Overview
 
 This project demonstrates a production-grade end-to-end Azure Data Engineering pipeline built on the Amazon Prime Titles dataset.
 The solution implements a modern medallion architecture (Bronze–Silver–Gold) using Azure Data Factory, Azure Data Lake Storage, Databricks, Azure Synapse Analytics, and Power BI, with CI/CD using Azure DevOps.
