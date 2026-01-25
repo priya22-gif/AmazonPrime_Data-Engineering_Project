@@ -125,16 +125,6 @@ Analytics-optimized data warehouse
 - Open Power BI dashboards
 - Connect to Synapse
 - Refresh and explore reports
-- 
-📊 **Key Highlights for Resume**
-
-- Designed enterprise-grade medallion architecture
-- Implemented incremental ingestion using Databricks Auto Loader
-- Built metadata-driven and parameterized ADF pipelines
-- Integrated CI/CD using Azure DevOps
-- Developed scalable PySpark transformations
-- Built analytics-ready warehouse in Azure Synapse
-- Created business dashboards using Power BI
 
 ✅ **Conclusion**
 
