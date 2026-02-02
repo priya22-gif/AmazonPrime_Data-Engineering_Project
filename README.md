@@ -1,16 +1,49 @@
 # 🎬 Azure End-to-End Data Engineering Project – Amazon Prime
 
+## 📌 Problem Statement
+
+Online streaming platforms like Amazon Prime generate large volumes of usage and content data that is often raw, inconsistent, and not optimized for analytics. This project demonstrates how to build a scalable, automated Azure data engineering pipeline that ingests, processes, and transforms streaming data into structured, analytics-ready datasets, supporting business insights and reporting.
+
 ## 📌 Project Overview
 
 This project demonstrates a production-grade end-to-end Azure Data Engineering pipeline built on the Amazon Prime Titles dataset.
 The solution implements a modern medallion architecture (Bronze–Silver–Gold) using Azure Data Factory, Azure Data Lake Storage, Databricks, Azure Synapse Analytics, and Power BI, with CI/CD using Azure DevOps.
 
-🏗️ **Architecture Overview:**
+
+## 🎯 Business Use Cases
+
+This pipeline helps analyze:
+- Most popular movies and shows
+- Genre and content category trends
+- Viewer engagement patterns over time
+- Title performance for reporting and insights
+
+## 📊 Key KPIs Enabled
+
+The curated data supports tracking of:
+- Total views by title and genre
+- Top performing content
+- Average watch time
+- Viewership trends over time
+  
+
+## 🏗️ Architecture Overview:
 
  <img width="1503" height="767" alt="AmazonPrime" src="https://github.com/user-attachments/assets/7958d239-9b8d-4a3d-9885-bdbe9eaf770e" />
 
+## 🛠️ Technologies Used:
+- Cloud Platform: Microsoft Azure
+- Data Ingestion: Azure Data Factory
+- Data Storage: Azure Data Lake Storage Gen2
+- Processing Engine: Azure Databricks (PySpark)
+- Incremental Ingestion: Databricks Auto Loader
+- Orchestration: Databricks Workflows
+- Data Warehouse: Azure Synapse Analytics
+- Visualization: Power BI
+- CI/CD: Azure DevOps
+- Version Control: GitHub
 
-**Key design principles:**
+## Key design principles:
 
 Medallion Architecture (Bronze / Silver / Gold)
 Incremental ingestion using Databricks Auto Loader
@@ -18,9 +51,10 @@ Parameterized pipelines for reusability
 CI/CD using Azure DevOps
 Analytics-optimized data warehouse
 
-**🔄 End-to-End Project Flow**
+## 🔄 End-to-End Data Flow
 
-**1️⃣ Data Ingestion (Azure Data Factory)**
+### 1️⃣ Data Ingestion – Bronze Layer (Azure Data Factory)
+
  - Implemented multi-source ingestion:
      - CSV files ingested from GitHub (HTTP source)
      - One master dataset ingested incrementally using Databricks Auto Loader
@@ -42,12 +76,12 @@ Analytics-optimized data warehouse
 
       <img width="1917" height="624" alt="ADF_Pipeline" src="https://github.com/user-attachments/assets/54d99978-eaad-4a50-a6e7-240ce6b0d81a" />
        
-2️⃣ Bronze Layer (Raw Data)
+## 2️⃣ Bronze Layer (Raw Data)
  - Stored ingested data in ADLS Bronze container
  - Preserved raw schema and structure
  - Enabled scalable ingestion for both batch and incremental data
    
-3️⃣ Silver Layer (Databricks Transformations)
+## 3️⃣ Silver Layer (Databricks Transformations)
 - Used Databricks notebooks with PySpark
 - Implemented:
      - Incremental loading using Auto Loader.
@@ -77,31 +111,20 @@ Analytics-optimized data warehouse
        
        <img width="1915" height="826" alt="scheduler_job" src="https://github.com/user-attachments/assets/19d18245-c27f-49b6-b932-f4318ba78bc9" />
 
-4️⃣ Gold Layer (Analytics & Warehousing)
-- Built Gold layer using Azure Synapse Analytics
+## 4️⃣ Gold Layer (Analytics & Warehousing)
+- Built a Gold layer using Azure Synapse Analytics
 - Designed analytics-ready tables optimized for reporting
 - Implemented curated datasets
        <img width="1916" height="873" alt="Azure_synapse" src="https://github.com/user-attachments/assets/8ec0b672-09ba-4e19-b341-396c1b41c1ac" />
 
-5️⃣ Data Visualization (Power BI)
+## 5️⃣ Data Visualization (Power BI)
 - Integrated Power BI with Azure Synapse Analytics
 - Built interactive dashboards showing:
       - Titles added per year
       <img width="1919" height="950" alt="Power BI" src="https://github.com/user-attachments/assets/11bfc1a5-2401-4446-95f7-e5c01324bfd1" />
 
-🛠️ **Technologies Used**
-- Cloud Platform: Microsoft Azure
-- Data Ingestion: Azure Data Factory
-- Data Storage: Azure Data Lake Storage Gen2
-- Processing Engine: Azure Databricks (PySpark)
-- Incremental Ingestion: Databricks Auto Loader
-- Orchestration: Databricks Workflows
-- Data Warehouse: Azure Synapse Analytics
-- Visualization: Power BI
-- CI/CD: Azure DevOps
-- Version Control: GitHub
 
-▶️**How to Run the Project**
+▶️****How to Run the Project****
 - Clone the repository - git clone https://github.com/<your-username>/amazon-prime-azure-de-project.git
 - Set up Azure resources
       - Azure Data Factory
@@ -126,7 +149,7 @@ Analytics-optimized data warehouse
 - Connect to Synapse
 - Refresh and explore reports
 
-✅ **Conclusion**
+✅ ****Outcome****
 
 This project showcases a real-world Azure Data Engineering solution, covering the complete lifecycle from ingestion to analytics.
 It demonstrates best practices in data modeling, orchestration, incremental processing, CI/CD, and visualization.
